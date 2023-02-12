@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Deployment.Application;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -11,17 +10,16 @@ using System.Windows.Forms;
 
 namespace FirstWin
 {
-  public partial class FrmWin : Form
+  public partial class FrmWeb : Form
   {
-    public FrmWin()
+    public FrmWeb()
     {
       InitializeComponent();
     }
 
-    private void btnConfirm_Click(object sender, EventArgs e)
+    private void button1_Click(object sender, EventArgs e)
     {
-      FrmWeb frmWeb = new FrmWeb();
-      frmWeb.ShowDialog(this);
+        Close();
     }
   }
 }
